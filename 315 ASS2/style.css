@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box; }
+  
+  body {
+    font-family: "Muli-Regular";
+    color: #666;
+    font-size: 13px;
+    margin: 0; }
+    table, th, td {
+      color:red;
+    }
+
+  input, textarea, select, button {
+    font-family: "Muli-Regular";
+    color: #333;
+    font-size: 13px; }
+  
+  p, h1, h2, h3, h4, h5, h6, ul {
+    margin: 0; }
+  h1{text-align: center}
+  .searchval
+  {
+    color: brown;
+  }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #111;
+      }
+  a:hover {
+    text-decoration: none; }
+  
+  :focus {
+    outline: none; }
+  
+  .wrapper {
+    min-height: 100vh;
+ }
+  
+  .inner {
+    min-width: 850px;
+    display: flex;
+    justify-content: center;
+}
+    .wrapper h3 {
+      text-transform: uppercase;
+      font-size: 22px;
+      font-family: "Muli-Bold";
+      text-align: center;
+      margin-bottom: 32px;
+      color: #333;
+      letter-spacing: 2px; 
+    padding: 20px 20px;}
+  
+  form {
+    width: 50%;
+    padding-left: 45px; 
+    
+}
+  .form-wrapper {
+    margin-bottom: 17px; }
+    .form-wrapper label {
+      margin-bottom: 9px;
+      display: block; }
+  
+  .form-control {
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-family: "Muli-Bold";
+    background: none; }
+    .form-control:focus {
+      border: 1px solid #ae3c33; }
+
+      
+      input[type=submit]{
+        border: none;
+        width: 152px;
+        height: 40px;
+        margin: auto;
+        margin-top: 29px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background: #ae3c33;
+        font-size: 13px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "Muli-SemiBold";
+        border-radius: 20px;
+        overflow: hidden;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s; }
+          input[type=submit]:hover
+          {
+            background: #f1493d;
+            border: 1px solid black;
+          }
+          main {
+            display: block;
+            margin: 0 auto;
+            max-width: 40rem;
+            padding: 1rem;
+          }
+          
+          
+          ol .main {
+            counter-reset: gradient-counter;
+            list-style: none;
+            margin: 1.75rem 0;
+            padding-left: 1rem;
+            
+          }
+          ol li a {
+            color: black;
+            padding:50px 50px;
+          }
+          ol li a:hover {
+            color: white;
+          }
+             ol li {
+              background: white;
+              border-radius: 0 0.5rem 0.5rem 0.5rem;
+              counter-increment: gradient-counter;
+              margin-top: 1rem;
+              min-height: 3rem;
+              padding: 1rem 1rem 1rem 3rem;
+              position: relative;
+              box-shadow: #111;
+            }
+          
+
+          @media (max-width: 991px) {
+            .inner {
+              min-width: 768px; } }
+          @media (max-width: 767px) {
+            .inner {
+              min-width: auto;
+              background: none;
+              padding-top: 0;
+              padding-bottom: 0; }
+          
+            form {
+              width: 100%;
+              padding-right: 15px;
+              padding-left: 15px; } }     

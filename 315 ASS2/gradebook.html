@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Course</title>
+</head>
+<body>
+    <ul>
+        <li><a href="course.html">Courses</a> </li>
+        <li><a href="student.html">Student</a> </li>
+        <li><a href="gradebook.html">GradeBook</a> </li>
+        <li><a href="reports.html">Reports</a> </li>
+    </ul>
+
+    <div class="wrapper">
+        <h3>GradeBook</h3>
+        <div class="inner">
+            <form method = "Post" action="assignGrade.php">
+                <div class="form-wrapper">
+                    <label for="">Course Code</label>
+                    <input type="text" name="ccode" id="textb" class="form-control" pattern="[A-Za-z]{3}[0-9]{3}" maxlength="6" required><br>
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Student ID</label>
+                    <input type="text" name="stud" id="textb" class="form-control" pattern="[20]{2}[0-9][0-9][0][0-9]{4}" maxlength="9" required ><br>
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Grade</label>
+                    <input type="text" name="grade" id="textb" class="form-control" pattern="[0-9]{1,3}" maxlength="3" title="err msg only numeric is allowed"><br>
+                </div>
+                <input type="submit" value="Assign Grade">
+            </form>
+        </div>
+    </div>
+    <div class="messagebox">
+
+    </div>
+</body>
+</html>

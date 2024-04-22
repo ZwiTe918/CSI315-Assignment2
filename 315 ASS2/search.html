@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Course</title>
+</head>
+<body>
+    <ul>
+        <li><a href="course.html">Courses</a> </li>
+        <li><a href="student.html">Student</a> </li>
+        <li><a href="gradebook.html">Gradebook</a> </li>
+        <li><a href="reports.html">Reports</a> </li>
+    </ul>
+    <div class="wrapper">
+        <h3>Course Registration</h3>
+        <div class="inner">
+            <form method = "POST" action="searchCourse.php">
+                <div class="form-wrapper">
+                    <label for="">Course Code</label>
+                    <input type="text" name="search" class="form-control" pattern="[A-Za-z]{3}[0-9]{3}"><br>
+                </div>
+                <input type="submit" value="Search Course">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

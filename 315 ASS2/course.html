@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Course</title>
+</head>
+<body>
+    <ul>
+        <li><a href="course.html">Courses</a> </li>
+        <li><a href="student.html">Student</a> </li>
+        <li><a href="gradebook.html">Gradebook</a> </li>
+        <li><a href="reports.html">Reports</a> </li>
+    </ul>
+    <div class="wrapper">
+        <h3>Course Registration</h3>
+        <div class="inner">
+            <form method = "POST" action="addCourse.php">
+                <div class="form-wrapper">
+                    <label for="">Course Code</label>
+                    <input type="text" name="ccode" class="form-control" pattern="[A-Za-z]{3}[0-9]{3}"><br>
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Course Title</label>
+                    <input type="text" name="ctitle" class="form-control" pattern="[a-zA-Z\s]{5,}" minlength="5" title="Title should be more than 5 letters"><br>
+                </div>
+                <input type="submit" value="Add Course">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
